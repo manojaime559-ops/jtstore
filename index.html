@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do Zero aos R$ 1.000 | Guia de finanças pessoais para iniciantes | JT store</title>
+<meta name="description" content="Guia prático para organizar sua vida financeira, reduzir dívidas e construir sua primeira reserva. E-book digital por R$ 29,90.">
+<meta name="theme-color" content="#0B2545">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B2545'/%3E%3Cpath d='M9 17l5 5 9-12' fill='none' stroke='%2322C55E' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --navy:#0B2545;
+  --navy-deep:#081A33;
+  --navy-soft:#13315C;
+  --green:#15803D;
+  --green-hover:#166534;
+  --green-bright:#4ADE80;
+  --mint:#EAF6EE;
+  --ink:#1B2A41;
+  --muted:#4A5A70;
+  --line:#D9E1EA;
+  --white:#fff;
+  --serif:Georgia,"Times New Roman",serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--white);-webkit-text-size-adjust:100%}
+img,svg{max-width:100%}
+h1,h2,h3{font-family:var(--serif);line-height:1.2;margin:0 0 .6em;color:var(--navy)}
+h2{font-size:clamp(1.6rem,5vw,2.25rem)}
+h3{font-size:1.15rem}
+p{margin:0 0 1em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--green-bright);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--white);color:var(--navy);padding:.75rem 1rem;z-index:100}
+.skip:focus{left:0}
+.wrap{width:100%;max-width:1060px;margin:0 auto;padding:0 1.25rem}
+section{padding:3.5rem 0}
+.lead{color:var(--muted);max-width:60ch}
+
+/* Botão de compra */
+.btn{display:inline-block;background:var(--green);color:var(--white);font-weight:700;font-size:1.125rem;letter-spacing:.02em;text-align:center;text-decoration:none;padding:1rem 2rem;border-radius:10px;border:2px solid var(--green);min-height:52px;transition:background-color .15s,transform .15s}
+.btn:hover{background:var(--green-hover);border-color:var(--green-hover)}
+.btn:active{transform:translateY(1px)}
+.btn-sm{font-size:.875rem;padding:.55rem 1.1rem;min-height:44px;border-radius:8px}
+.btn-block{display:block;width:100%}
+
+/* Cabeçalho */
+.top{background:var(--navy);position:sticky;top:0;z-index:50;border-bottom:1px solid var(--navy-soft)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:60px}
+.brand{color:var(--white);text-decoration:none;font-weight:700;line-height:1.2}
+.brand small{display:block;font-weight:400;font-size:.75rem;color:#B9C7DA}
+
+/* Hero */
+.hero{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);color:var(--white);padding:2.5rem 0 3.5rem}
+.hero .wrap{display:grid;gap:2.5rem;align-items:center}
+.hero h1{color:var(--white);font-size:clamp(1.9rem,7vw,3.1rem)}
+.hero p.sub{color:#D3DEEC;font-size:1.125rem;max-width:52ch}
+.price{display:flex;align-items:baseline;gap:.6rem;margin:1.5rem 0 1rem}
+.price strong{font-family:var(--serif);font-size:2.5rem;color:var(--white);line-height:1}
+.price span{color:#B9C7DA;font-size:.95rem}
+.hero .btn{width:100%}
+.hero .note{font-size:.9rem;color:#B9C7DA;margin:.9rem 0 0}
+
+/* Capa do e-book (CSS) */
+.cover{position:relative;width:min(100%,280px);aspect-ratio:3/4;margin:0 auto;background:linear-gradient(160deg,var(--navy-soft),var(--navy-deep));border-radius:6px 12px 12px 6px;padding:1.6rem 1.4rem;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 24px 50px rgba(0,0,0,.35),inset 6px 0 0 rgba(255,255,255,.08);color:var(--white);border:1px solid rgba(255,255,255,.12)}
+.cover .c-brand{font-size:.7rem;color:#B9C7DA;letter-spacing:.04em}
+.cover .c-title{font-family:var(--serif);font-weight:700;font-size:2rem;line-height:1.05;margin:0}
+.cover .c-title em{font-style:normal;color:var(--green-bright);display:block}
+.cover .c-sub{font-size:.72rem;color:#D3DEEC;line-height:1.4;margin:.8rem 0 0}
+.cover .c-bar{height:5px;width:56px;background:var(--green-bright);border-radius:3px;margin-bottom:.8rem}
+.cover .c-author{font-size:.8rem;font-weight:600;margin:0}
+
+/* Problemas */
+.problems{background:var(--mint)}
+.grid{display:grid;gap:1rem;margin-top:1.75rem}
+.card{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:1.25rem 1.25rem 1rem}
+.problems .card{border-left:5px solid var(--navy)}
+.card p{color:var(--muted);margin:0 0 .25em;font-size:1rem}
+
+/* Benefícios */
+.benefits ul{list-style:none;margin:1.75rem 0 0;padding:0;display:grid;gap:.9rem}
+.benefits li{display:flex;gap:.9rem;align-items:flex-start;padding:1rem 1.1rem;border:1px solid var(--line);border-radius:12px}
+.benefits li svg{flex:none;width:26px;height:26px;margin-top:2px}
+.benefits li span{display:block}
+.benefits li b{color:var(--navy)}
+
+/* Conteúdo */
+.content{background:var(--navy);color:var(--white)}
+.content h2{color:var(--white)}
+.content .lead{color:#D3DEEC}
+.content .card{background:var(--navy-soft);border-color:rgba(255,255,255,.14)}
+.content .card h3{color:var(--white)}
+.content .card p{color:#D3DEEC}
+
+/* Oferta */
+.offer .box{border:2px solid var(--navy);border-radius:16px;padding:2rem 1.25rem;display:grid;gap:2rem;align-items:center;background:var(--white)}
+.offer .price strong{color:var(--navy)}
+.offer .price span{color:var(--muted)}
+.offer .btn{width:100%}
+.offer .small{font-size:.9rem;color:var(--muted);margin:.9rem 0 0}
+
+/* FAQ */
+.faq{background:var(--mint)}
+.faq details{background:var(--white);border:1px solid var(--line);border-radius:12px;margin-top:.8rem}
+.faq summary{cursor:pointer;font-weight:700;color:var(--navy);padding:1rem 1.1rem;min-height:52px;list-style:none;display:flex;justify-content:space-between;gap:1rem;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.5rem;line-height:1;color:var(--green);flex:none}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{padding:0 1.1rem;margin:0 0 1.1rem;color:var(--muted)}
+
+/* Aviso e rodapé */
+.disclaimer{padding:2rem 0}
+.disclaimer p{font-size:.9rem;color:var(--muted);margin:0;max-width:75ch}
+footer{background:var(--navy-deep);color:#B9C7DA;text-align:center;padding:1.75rem 1.25rem;font-size:.95rem}
+
+/* Barra fixa de compra no celular */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;background:var(--white);border-top:1px solid var(--line);padding:.6rem 1rem calc(.6rem + env(safe-area-inset-bottom,0px));z-index:40;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.sticky-cta b{font-family:var(--serif);color:var(--navy);font-size:1.25rem}
+.sticky-cta .btn{padding:.7rem 1.3rem;min-height:48px;font-size:1rem}
+body{padding-bottom:72px}
+
+@media (min-width:760px){
+  section{padding:5rem 0}
+  .hero{padding:4rem 0 5rem}
+  .hero .wrap{grid-template-columns:1.2fr .8fr}
+  .hero .btn{width:auto;min-width:300px}
+  .grid.two{grid-template-columns:repeat(2,1fr)}
+  .benefits ul{grid-template-columns:repeat(2,1fr)}
+  .offer .box{grid-template-columns:.8fr 1.2fr;padding:2.5rem}
+  .offer .btn{width:auto;min-width:300px}
+  .sticky-cta{display:none}
+  body{padding-bottom:0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="JT store, início da página">JT store<small>Finanças pessoais para iniciantes</small></a>
+    <a class="btn btn-sm" href="https://aurapay.site/p/4SUH">COMPRAR AGORA</a>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <h1>Organize seu dinheiro e comece a construir sua primeira reserva financeira</h1>
+      <p class="sub">Um guia prático para controlar seus gastos, organizar suas dívidas e dar os primeiros passos rumo aos seus primeiros R$ 1.000 guardados</p>
+      <div class="price">
+        <strong>R$ 29,90</strong>
+        <span>e-book digital</span>
+      </div>
+      <a class="btn" href="https://aurapay.site/p/4SUH">COMPRAR AGORA</a>
+      <p class="note">Você será levado à página de checkout, onde estão os detalhes de pagamento e entrega.</p>
+    </div>
+    <div class="cover" role="img" aria-label="Capa do e-book Do Zero aos R$ 1.000, de Jaime Júlio Tivane">
+      <div>
+        <p class="c-brand">JT store</p>
+      </div>
+      <div>
+        <div class="c-bar"></div>
+        <p class="c-title">DO ZERO <em>AOS R$ 1.000</em></p>
+        <p class="c-sub">O Guia Prático para Organizar sua Vida Financeira, Reduzir Dívidas e Construir sua Primeira Reserva.</p>
+      </div>
+      <p class="c-author">Jaime Júlio Tivane</p>
+    </div>
+  </div>
+</section>
+
+<section class="problems" aria-labelledby="t-problemas">
+  <div class="wrap">
+    <h2 id="t-problemas">Você se identifica com alguma destas situações?</h2>
+    <p class="lead">Se pelo menos uma delas faz parte da sua rotina, este guia foi pensado para o seu ponto de partida.</p>
+    <div class="grid two">
+      <div class="card">
+        <h3>Dificuldade para controlar gastos</h3>
+        <p>O salário entra, o mês passa e fica a sensação de não saber para onde o dinheiro foi.</p>
+      </div>
+      <div class="card">
+        <h3>Compras por impulso</h3>
+        <p>Pequenas compras não planejadas se acumulam e pesam no orçamento no fim do mês.</p>
+      </div>
+      <div class="card">
+        <h3>Dívidas desorganizadas</h3>
+        <p>Várias contas, vários vencimentos e nenhuma visão clara do que deve ser resolvido primeiro.</p>
+      </div>
+      <div class="card">
+        <h3>Dificuldade para poupar</h3>
+        <p>Guardar dinheiro parece sempre ficar para depois, e a reserva nunca sai do papel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="benefits" aria-labelledby="t-beneficios">
+  <div class="wrap">
+    <h2 id="t-beneficios">O que você vai aprender a fazer</h2>
+    <p class="lead">Passos práticos, em linguagem simples, para quem está começando.</p>
+    <ul>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg><span><b>Registrar seus gastos</b> para enxergar com clareza onde o dinheiro está indo.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg><span><b>Organizar seu orçamento</b> de acordo com a sua realidade.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg><span><b>Identificar despesas a reduzir</b> sem complicação.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg><span><b>Planejar o pagamento das dívidas</b> com mais clareza e ordem.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg><span><b>Definir uma meta realista de poupança</b> para começar a sua primeira reserva.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="content" aria-labelledby="t-conteudo">
+  <div class="wrap">
+    <h2 id="t-conteudo">O que você encontra no e-book</h2>
+    <p class="lead">O guia reúne quatro frentes essenciais da organização financeira pessoal.</p>
+    <div class="grid two">
+      <div class="card">
+        <h3>Organização financeira</h3>
+        <p>Como colocar suas finanças em ordem e saber em que ponto você está.</p>
+      </div>
+      <div class="card">
+        <h3>Controle de despesas</h3>
+        <p>Como acompanhar o que entra e o que sai, e perceber onde dá para ajustar.</p>
+      </div>
+      <div class="card">
+        <h3>Planejamento de dívidas</h3>
+        <p>Como organizar suas dívidas e montar um plano para lidar com elas.</p>
+      </div>
+      <div class="card">
+        <h3>Construção de reserva</h3>
+        <p>Como dar os primeiros passos para formar sua primeira reserva financeira.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="offer" id="oferta" aria-labelledby="t-oferta">
+  <div class="wrap">
+    <div class="box">
+      <div class="cover" role="img" aria-label="Capa do e-book Do Zero aos R$ 1.000, de Jaime Júlio Tivane">
+        <div><p class="c-brand">JT store</p></div>
+        <div>
+          <div class="c-bar"></div>
+          <p class="c-title">DO ZERO <em>AOS R$ 1.000</em></p>
+          <p class="c-sub">O Guia Prático para Organizar sua Vida Financeira, Reduzir Dívidas e Construir sua Primeira Reserva.</p>
+        </div>
+        <p class="c-author">Jaime Júlio Tivane</p>
+      </div>
+      <div>
+        <h2 id="t-oferta">Do Zero aos R$ 1.000</h2>
+        <p>E-book digital com um guia prático para organizar sua vida financeira, reduzir dívidas e construir sua primeira reserva, escrito para quem está começando.</p>
+        <div class="price">
+          <strong>R$ 29,90</strong>
+          <span>e-book digital</span>
+        </div>
+        <a class="btn" href="https://aurapay.site/p/4SUH">COMPRAR AGORA</a>
+        <p class="small">Pagamento e entrega são feitos na página de checkout.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" aria-labelledby="t-faq">
+  <div class="wrap">
+    <h2 id="t-faq">Perguntas frequentes</h2>
+    <details>
+      <summary>Para quem é este e-book?</summary>
+      <p>Para quem quer começar a organizar a vida financeira: controlar gastos, entender suas dívidas e dar os primeiros passos para guardar dinheiro.</p>
+    </details>
+    <details>
+      <summary>Preciso ter conhecimentos prévios?</summary>
+      <p>Não. O material foi pensado para iniciantes, com linguagem simples e orientações práticas.</p>
+    </details>
+    <details>
+      <summary>Como faço para comprar?</summary>
+      <p>Clique em “COMPRAR AGORA”. Você será direcionado à página de checkout, onde finaliza a compra. Os detalhes de pagamento estão lá.</p>
+    </details>
+    <details>
+      <summary>Como recebo o e-book?</summary>
+      <p>As informações sobre a entrega do e-book são apresentadas na página de checkout, depois de clicar em “COMPRAR AGORA”.</p>
+    </details>
+  </div>
+</section>
+
+<section class="disclaimer" aria-label="Aviso importante">
+  <div class="wrap">
+    <p><strong>Aviso:</strong> Este material tem finalidade educativa e não constitui aconselhamento financeiro individual. Os resultados dependem da situação financeira e da aplicação das orientações por cada leitor.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p style="margin:0">JT store | Finanças pessoais para iniciantes</p>
+</footer>
+
+<div class="sticky-cta">
+  <b>R$ 29,90</b>
+  <a class="btn" href="https://aurapay.site/p/4SUH">COMPRAR AGORA</a>
+</div>
+
+</body>
+</html>
